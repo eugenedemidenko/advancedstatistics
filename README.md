@@ -3,7 +3,7 @@ This repository contains accompanying data for my book Advanced Statistics with 
 
 | Code/Data                                           | Chapter | Section | Page | Description                                                         | 
 |-----------------------------------------------------|---------|---------|------|---------------------------------------------------------------------| 
-| mvsd.r                                              | 1       | 1.5.5   | 19   | "Computation of mean, variance and SD"                              | 
+| [mvsd.r](https://github.com/eugenedemidenko/advancedstats/blob/master/RcodeData/mvsd.r)                                              | 1       | 1.5.5   | 19   | "Computation of mean, variance and SD"                              | 
 | vecomp.r                                            | 1       | 1.5.5   | 20   | Vectorized computation of the double integral                       | 
 | my1sr.r                                             | 1       | 1.5.6   | 23   | An example for graphics in R                                        | 
 | frlJLET.r                                           | 1       | 1.56    | 24   | Frequency of English letters in a Jack London novel                 | 
@@ -200,7 +200,7 @@ This repository contains accompanying data for my book Advanced Statistics with 
 | chismult.r                                          | 7       | 7.9.1   | 607  | Simulations for chi-square and Wald tests                           | 
 | frlJL.r                                             | 7       | 7.9.1   | 607  | Wald test for English letter analysis                               | 
 | Mark_Twain_The_Adventures_of_Tom_Sawyer_f1.txt.char | 7       | 7.9.1   | 607  | Mark Twain novel char data                                          | 
-| mnist_train.csv                                     | 7       | 7.9.2   | 608  | Handwritten digit train set                                         | 
+| mnist_train.csv.zip                                 | 7       | 7.9.2   | 608  | Handwritten digit train set                                         | 
 | mnist_test.csv                                      | 7       | 7.9.2   | 608  | Handwritten digit test set                                          | 
 | dig.mnist.r                                         | 7       | 7.9.2   | 609  | Plotting and classification of handwritten digits                   | 
 | wtext.r                                             | 7       | 7.9     | 611  | Analysis of English letters in the novel by Jane Austen             | 
