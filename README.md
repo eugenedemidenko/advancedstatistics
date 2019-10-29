@@ -2,7 +2,7 @@
 
 | Cover | Description |
 |---|---|
-| ![Front Book Cover](https://github.com/eugenedemidenko/advancedstats/blob/master/FrontBookCover.png) | This repository contains accompanying data for my book _Advanced Statistics with Application in R_. Please visit my website www.eugened.org for more information about the book. Below is the table of contents for the accompanying data provided with the book. You can individually download each piece of data; but my recommendation is to download everything using the zip option in GitHub. |
+| ![Front Book Cover](https://github.com/eugenedemidenko/advancedstats/blob/master/FrontBookCover.png) | This repository contains accompanying data for my book _Advanced Statistics with Application in R_. Please visit my website www.eugened.org for more information about the book. Below is the Table of Contents for the accompanying data provided with the book. You can individually download each piece of data; but my recommendation is to download everything using the zip option in GitHub. |
 
 
 | Code/Data                                           | Chapter | Section | Page | Description                                                         | 
