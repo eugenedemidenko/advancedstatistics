@@ -196,7 +196,7 @@ powlinmodC.r,7,7.9,604,Type I adjustments for three tests
 chismult.r,7,7.9.1,607,Simulations for chi-square and Wald tests
 frlJL.r,7,7.9.1,607,Wald test for English letter analysis
 Mark_Twain_The_Adventures_of_Tom_Sawyer_f1.txt.char,7,7.9.1,607,Mark Twain novel char data
-mnist_train.csv,7,7.9.2,608,Handwritten digit train set
+mnist_train.csv.zip,7,7.9.2,608,Handwritten digit train set
 mnist_test.csv,7,7.9.2,608,Handwritten digit test set
 dig.mnist.r,7,7.9.2,609,Plotting and classification of handwritten digits
 wtext.r,7,7.9,611,Analysis of English letters in the novel by Jane Austen
