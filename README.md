@@ -1,5 +1,5 @@
 # Advanced Statistics with Application in R
-This repository contains accompanying data for my book Advanced Statistics with Application in R. Please visit my website www.eugened.org for more information about the book. Below is the table of contents for the accompanying data provided with the book. You can individually download each piece of data; but my recommendation is to download everything using the zip option in GitHub.
+This repository contains accompanying data for my book _Advanced Statistics with Application in R_. Please visit my website www.eugened.org for more information about the book. Below is the table of contents for the accompanying data provided with the book. You can individually download each piece of data; but my recommendation is to download everything using the zip option in GitHub.
 
 | Code/Data                                           | Chapter | Section | Page | Description                                                         | 
 |-----------------------------------------------------|---------|---------|------|---------------------------------------------------------------------| 
