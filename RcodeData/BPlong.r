@@ -1,0 +1,51 @@
+BPlong <-
+function()
+{
+dump("BPlong","c:\\StatBook\\BPlong.r")
+da=read.csv("c:\\StatBook\\BPdata.csv",header=T,stringsAsFactors=F)
+#return(da)
+n=nrow(da)
+#X=matrix(0,nrow=90,ncol=30+3)
+#k=1
+#for(i in 1:30)
+#{
+#	X[k:(k+2),i]=rep(1,3)
+#	X[k:(k+2),31]=rep(da[i,1],3)
+#	X[k:(k+2),32]=rep(da[i,2],3)	
+#	k=k+3
+#}
+#X[,33]=rep(0:2,each=30)
+#solve(t(X)%*%X)
+#return()
+par(mfrow=c(1,2),mar=c(4,4,3,1),cex.main=1.5)
+matplot(0:2,t(da[,3:5]),ylim=c(130,180),type="l",col=1,lwd=2,lty=1,axes=F,xlab="",ylab="")
+mtext(side=1,"Month",cex=1.75,line=2.75)
+mtext(side=2,"Blood pressure",cex=1.75,line=2.5)
+axis(side=1,c(0,1,2));axis(side=2,seq(130,180,10))
+
+Y=c(da$BP0,da$BP1,da$BP2)
+mo=rep(0:2,each=n)
+M=rep(da$Male,3)
+A=rep(da$Age,3)
+omoMA=lm(Y~mo+M+A)
+soM=summary(omoMA)
+print(soM)
+a=coef(lm(Y~mo))
+#print(summary(lm(Y~mo)))
+lines(0:2,a[1]+a[2]*(0:2),lwd=4,col=2,lty=2)
+title(paste("Blood pressure over three months\np-value =",round(soM$coefficients[2,4],3)))
+
+diff=c(da$BP1-da$BP0,da$BP2-da$BP0)
+mo=c(rep(0,n),rep(1,n))
+A=rep(da$Age,2)
+M=rep(da$Male,2)
+omo=lm(diff~mo-1)
+somo=summary(omo)
+print(somo)
+matplot(1:2,t(da[,4:5]-da[,3]),ylim=c(-40,40),type="l",col=1,lty=1,axes=F,xlab="",ylab="")
+mtext(side=1,"Month",cex=1.75,line=2.75)
+mtext(side=2,"Blood pressure",cex=1.75,line=2.5)
+axis(side=1,c(1,2));axis(side=2,seq(-40,40,10))
+title(paste("Difference from the baseline\np-value = ",round(somo$coefficients[1,4],3)))
+lines(1:2,coef(omo)*(1:2),lwd=4,col=2,lty=2)
+}
